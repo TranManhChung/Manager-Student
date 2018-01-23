@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:weightSum="8"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtChange"
+            android:gravity="center_vertical"
+android:layout_marginTop="10dp"
+            android:text="ID"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/edtChange"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txtChange"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_edit_text" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/btnCancel"
+        android:layout_alignBottom="@+id/btnCancel"
+        android:layout_alignLeft="@+id/txtChange"
+        android:layout_alignStart="@+id/txtChange"
+        android:background="@drawable/custom_edit_text"
+        android:text="OK"
+        android:textColor="#00c4ff" />
+
+    <Button
+
+        android:id="@+id/btnCancel"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/txtChange"
+        android:layout_alignRight="@+id/txtChange"
+        android:layout_below="@+id/edtChange"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/custom_edit_text"
+        android:text="Cancel" />
+</RelativeLayout>
